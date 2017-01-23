@@ -2,14 +2,14 @@
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common AOSP stuff
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/bq/piccolo/full_piccolo.mk)
 
 PRODUCT_RELEASE_NAME := Aquaris M5
-PRODUCT_NAME := lineage_piccolo
+PRODUCT_NAME := aosp_piccolo
 
 # Set product device & name
 PRODUCT_BUILD_PROP_OVERRIDES += \
